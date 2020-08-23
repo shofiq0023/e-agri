@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Admin panel | Dashboard</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="../assets/images/icon/icon.png">
+	<!-- Bootstrap, fontawesome, custom, responsive css -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+		<div class="container-fluid">
+			<button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="container-fluid">
+				    <div class="row">
+				        <!-- side bar -->
+				        <div class="col-xl-2 col-lg-3 sidebar bg-dark fixed-top sidebar">
+				            <a href="dashboard.html" class="navbar-brand d-block mx-auto text-center py-3 mb-3">E-Admin</a>
+				            <ul class="navbar-nav flex-column">
+				                <li class="navbar-item">
+				                    <a href="dashboard.html" class="nav-link nav-link-main text-white p-3 mb-2 sidebar-link"><i class="fa fa-home fa-lg mr-3"></i>Dashboard</a>
+				                </li>
+				                <li class="navbar-item link-active">
+				                    <a href="#" class="nav-link nav-link-main dropdown-toggle text-white p-3 mb-2 sidebar-link" data-toggle="collapse" data-target="#profileCollapseMenu"><i class="fa fa-user fa-lg mr-3"></i>Profile</a>
+				                    <div id="profileCollapseMenu" class="collapse">
+				                        <ul>
+				                            <li class="navbar-item ml-4">
+				                                <a href="all-user.html" class="nav-link"><i class="fas fa-user-friends mr-2"></i>All users</a>
+				                            </li>
+				                            <li class="navbar-item ml-4">
+				                                <a href="add-user.html" class="nav-link"><i class="fas fa-user-plus mr-2"></i>Add user</a>
+				                            </li>
+				                        </ul>
+				                    </div>
+				                </li>
+				                <li class="navbar-item">
+				                    <a href="chat.html" class="nav-link nav-link-main text-white p-3 mb-2 sidebar-link"><i class="fa fa-comment fa-lg mr-3"></i>Chat</a>
+				                </li>
+				                <li class="navbar-item">
+				                    <a href="#" class="nav-link nav-link-main dropdown-toggle text-white p-3 mb-2 sidebar-link" data-toggle="collapse" data-target="#productCollapseMenu"><i class="fa fa-shopping-cart fa-lg mr-3"></i>Product</a>
+				                    <div id="productCollapseMenu" class="collapse">
+				                        <ul>
+				                            <li class="navbar-item ml-4">
+				                                <a href="add-product.html" class="nav-link"><i class="fas fa-plus-circle mr-2"></i>Add product</a>
+				                            </li>
+				                            <li class="navbar-item ml-4">
+				                                <a href="all-products.html" class="nav-link"><i class="fas fa-clipboard-list mr-2"></i>product list</a>
+				                            </li>
+				                        </ul>
+				                    </div>
+				                </li>
+				                <li class="navbar-item">
+				                    <a href="website.html" class="nav-link nav-link-main text-white p-3 mb-2 sidebar-link"><i class="fa fa-globe-americas fa-lg mr-3"></i>Website</a>
+				                </li>
+				            </ul>
+				        </div>
+				        <!-- side bar ends -->
+				        
+				        <!-- top bar -->
+				        <div class="col-xl-10 col-lg-9 ml-auto fixed-top py-2 top-navbar shadow">
+				            <div class="row align-items-center">
+				                <div class="col-md-4">
+                                    <h4 class="text-white text-uppercase"><i class="fas fa-user-friends mr-3"></i>all users</h4>
+				                </div>
+				                <div class="col-md-2">
+				                    <a href="../index.html" class="text-white" target="_blank"><i class="fa fa-globe-americas fa-lg mr-1"></i>Visit website</a>
+				                </div>
+				                <div class="col-md-6">
+				                    <ul class="navbar-nav">
+				                        <li class="navbar-item">
+				                            <a href="#" class="nav-link"><i class="fa fa-comment fa-lg mr-3"></i>Chat</a>
+				                        </li>
+				                        <li class="navbar-item ml-md-auto">
+				                            <a href="index.html" class="nav-link text-capitalize text-danger font-weight-bold">sign-out<i class="fa fa-sign-out-alt fa-lg ml-2"></i></a>
+				                        </li>
+				                    </ul>
+				                </div>
+				            </div>
+				        </div>
+				        <!-- top bar ends -->
+				    </div>
+				</div>
+			</div>
+		</div>
+	</nav>
+    <!-- navbar ends -->
+    
+    <!-- admin viewport -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-10 col-lg-9 ml-auto">
+                <!-- admin main screen -->
+                <div class="pt-5 mt-3 mb-5">
+                
+                <h3 class="text-center mb-3 text-muted">List of all user</h3>
+                <div class="filters">
+                    <a href="#" class="btn btn-custom px-3">Admins</a>
+                    <a href="#" class="btn btn-custom px-3">Farmers</a>
+                    <a href="#" class="btn btn-custom px-3">Customers</a>
+                    <div class="float-md-right">
+                        <a href="add-user.html" class="btn btn-custom px-3 ">Add User<i class="fas fa-user-plus ml-3"></i></a>
+                    </div>
+                </div>
+                    <form action="" class="form mt-5">
+                        <div class="form-row">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="search" placeholder="Search...">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><a href="#"><i class="fas fa-search"></i></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                <table class="table table-striped text-center bg-light">
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>Name</td>
+                            <td>Email</td>
+                            <td>Phone</td>
+                            <td>Manage</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>01787620298</td>
+                            <td>
+                                <a href="view-user.html" class="px-2 text-success"><i class="fas fa-search"></i></a>
+                                <a href="#" class="px-2 text-danger"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>01787620298</td>
+                            <td>
+                                <a href="#" class="px-2 text-success"><i class="fas fa-search"></i></a>
+                                <a href="#" class="px-2 text-danger"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>01787620298</td>
+                            <td>
+                                <a href="#" class="px-2 text-success"><i class="fas fa-search"></i></a>
+                                <a href="#" class="px-2 text-danger"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>01787620298</td>
+                            <td>
+                                <a href="#" class="px-2 text-success"><i class="fas fa-search"></i></a>
+                                <a href="#" class="px-2 text-danger"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>01787620298</td>
+                            <td>
+                                <a href="#" class="px-2 text-success"><i class="fas fa-search"></i></a>
+                                <a href="#" class="px-2 text-danger"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>01787620298</td>
+                            <td>
+                                <a href="#" class="px-2 text-success"><i class="fas fa-search"></i></a>
+                                <a href="#" class="px-2 text-danger"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>01787620298</td>
+                            <td>
+                                <a href="#" class="px-2 text-success"><i class="fas fa-search"></i></a>
+                                <a href="#" class="px-2 text-danger"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                </div>
+                <!-- admin main screen ends -->
+            </div>
+        </div>
+    </div>
+    <!-- admin viewport ends -->
+    
+    
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<script src="../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+</body>
+</html>

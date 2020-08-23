@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Admin panel | Dashboard</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="../assets/images/icon/icon.png">
+	<!-- Bootstrap, fontawesome, custom, responsive css -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+		<div class="container-fluid">
+			<button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="container-fluid">
+				    <div class="row">
+				        <!-- side bar -->
+				        <div class="col-xl-2 col-lg-3 sidebar bg-dark fixed-top sidebar">
+				            <a href="dashboard.html" class="navbar-brand d-block mx-auto text-center py-3 mb-3">E-Admin</a>
+				            <ul class="navbar-nav flex-column">
+				                <li class="navbar-item">
+				                    <a href="dashboard.html" class="nav-link nav-link-main text-white p-3 mb-2 sidebar-link"><i class="fa fa-home fa-lg mr-3"></i>Dashboard</a>
+				                </li>
+				                <li class="navbar-item ">
+				                    <a href="#" class="nav-link nav-link-main dropdown-toggle text-white p-3 mb-2 sidebar-link" data-toggle="collapse" data-target="#profileCollapseMenu"><i class="fa fa-user fa-lg mr-3"></i>Profile</a>
+				                    <div id="profileCollapseMenu" class="collapse">
+				                        <ul>
+				                            <li class="navbar-item ml-4">
+				                                <a href="all-user.html" class="nav-link"><i class="fas fa-user-friends mr-2"></i>All users</a>
+				                            </li>
+				                            <li class="navbar-item ml-4">
+				                                <a href="add-user.html" class="nav-link"><i class="fas fa-user-plus mr-2"></i>Add user</a>
+				                            </li>
+				                        </ul>
+				                    </div>
+				                </li>
+				                <li class="navbar-item">
+				                    <a href="chat.html" class="nav-link nav-link-main text-white p-3 mb-2 sidebar-link"><i class="fa fa-comment fa-lg mr-3"></i>Chat</a>
+				                </li>
+				                <li class="navbar-item">
+				                    <a href="#" class="nav-link nav-link-main dropdown-toggle text-white p-3 mb-2 sidebar-link" data-toggle="collapse" data-target="#productCollapseMenu"><i class="fa fa-shopping-cart fa-lg mr-3"></i>Product</a>
+				                    <div id="productCollapseMenu" class="collapse">
+				                        <ul>
+				                            <li class="navbar-item ml-4">
+				                                <a href="add-product.html" class="nav-link"><i class="fas fa-plus-circle mr-2"></i>Add product</a>
+				                            </li>
+				                            <li class="navbar-item ml-4">
+				                                <a href="all-products.html" class="nav-link"><i class="fas fa-clipboard-list mr-2"></i>product list</a>
+				                            </li>
+				                        </ul>
+				                    </div>
+				                </li>
+				                <li class="navbar-item link-active">
+				                    <a href="website.html" class="nav-link nav-link-main text-white p-3 mb-2 sidebar-link"><i class="fa fa-globe-americas fa-lg mr-3"></i>Website</a>
+				                </li>
+				            </ul>
+				        </div>
+				        <!-- side bar ends -->
+				         ends -->
+				        
+				        <!-- top bar -->
+				        <div class="col-xl-10 col-lg-9 ml-auto fixed-top py-2 top-navbar shadow">
+				            <div class="row align-items-center">
+				                <div class="col-md-4">
+                                    <h4 class="text-white text-uppercase"><i class="fa fa-home fa-lg mr-3"></i>dashboard</h4>
+				                </div>
+				                <div class="col-md-2">
+				                    <a href="../index.html" class="text-white" target="_blank"><i class="fa fa-globe-americas fa-lg mr-1"></i>Visit website</a>
+				                </div>
+				                <div class="col-md-6">
+				                    <ul class="navbar-nav">
+				                        <li class="navbar-item">
+				                            <a href="chat.html" class="nav-link"><i class="fa fa-comment fa-lg mr-3"></i>Chat</a>
+				                        </li>
+				                        <li class="navbar-item ml-md-auto">
+				                            <a href="index.html" class="nav-link text-capitalize text-danger font-weight-bold">sign-out<i class="fa fa-sign-out-alt fa-lg ml-2"></i></a>
+				                        </li>
+				                    </ul>
+				                </div>
+				            </div>
+				        </div>
+				        <!-- top bar ends -->
+				    </div>
+				</div>
+			</div>
+		</div>
+	</nav>
+    <!-- navbar ends -->
+    
+    <!-- admin viewport -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-10 col-lg-9 ml-auto">
+                <!-- admin main screen -->
+                <div class="pt-5 mt-3 mb-5">
+                   
+                   <h3 class="text-center mt-3">Website icon</h3>
+                   <div class="row">
+                       <div class="col-sm-3">
+                           <img src="../assets/images/icon/icon.png" alt="website icon" class="img-fluid">
+                       </div>
+                       <div class="col-sm-9">
+                           <form action="">
+                               <label for="icon">Change icon</label>
+                               <input type="file" class="form-control mb-3" name="icon" id="icon">
+                               <input type="submit" value="Submit" class="btn btn-custom">
+                           </form>
+                       </div>
+                   </div>
+                   <hr>
+                   
+                   <h3 class="text-center mt-3">Website brand logo</h3>
+                   <div class="row">
+                       <div class="col-sm-3">
+                           <img src="../assets/images/icon/brand.png" alt="website logo" class="img-fluid">
+                       </div>
+                       <div class="col-sm-9">
+                           <form action="">
+                               <label for="brand-logo">Change logo</label>
+                               <input type="file" class="form-control mb-3" name="icon" id="brand-logo">
+                               <input type="submit" value="Submit" class="btn btn-custom">
+                           </form>
+                       </div>
+                   </div>
+                   <hr>
+                   
+                   <h3 class="text-center mt-3">Website logo</h3>
+                   <div class="row">
+                       <div class="col-sm-3">
+                           <img src="../assets/images/icon/logo.png" alt="website logo" class="img-fluid">
+                       </div>
+                       <div class="col-sm-9">
+                           <form action="">
+                               <label for="logo">Change logo</label>
+                               <input type="file" class="form-control mb-3" name="icon" id="logo">
+                               <input type="submit" value="Submit" class="btn btn-custom">
+                           </form>
+                       </div>
+                   </div>
+                   <hr>
+                   
+                   <h3 class="text-center mt-3">Team information</h3>
+                   <div class="row">
+                       <div class="col-sm-2">
+                           <img src="../assets/images/team/team-person-1.jpg" alt="team person" class="img-fluid">
+                       </div>
+                       <div class="col-sm-4">
+                           <form action="">
+                               <div class="form-group">
+                                   <label for="team-image">Change image</label>
+                                   <input type="file" class="form-control" id="team-image">
+                               </div>
+                               <div class="form-group">
+                                   <label for="team-name">Name</label>
+                                   <input type="text" class="form-control" id="team-name" value="Liza smith">
+                               </div>
+                               <div class="form-group">
+                                   <label for="team-position">Position</label>
+                                   <input type="text" class="form-control" id="team-position" value="Chief director">
+                               </div>
+                               <div class="form-group">
+                                   <label for="discription">Discription</label>
+                                   <textarea name="team-discription" id="discription" class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, facere accusantium aperiam quam blanditiis veritatis, iste quae obcaecati saepe quasi debitis deserunt natus, repellat architecto nostrum, cumque dolorem quod ipsam.</textarea>
+                               </div>
+                           </form>
+                       </div>
+                       <div class="col-sm-2">
+                           <img src="../assets/images/team/team-person-2.jpg" alt="team person" class="img-fluid">
+                       </div>
+                       <div class="col-sm-4">
+                           <form action="">
+                               <div class="form-group">
+                                   <label for="team-image">Change image</label>
+                                   <input type="file" class="form-control" id="team-image">
+                               </div>
+                               <div class="form-group">
+                                   <label for="team-name">Name</label>
+                                   <input type="text" class="form-control" id="team-name" value="Liza smith">
+                               </div>
+                               <div class="form-group">
+                                   <label for="team-position">Position</label>
+                                   <input type="text" class="form-control" id="team-position" value="Chief director">
+                               </div>
+                               <div class="form-group">
+                                   <label for="discription">Discription</label>
+                                   <textarea name="team-discription" id="discription" class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, facere accusantium aperiam quam blanditiis veritatis, iste quae obcaecati saepe quasi debitis deserunt natus, repellat architecto nostrum, cumque dolorem quod ipsam.</textarea>
+                               </div>
+                           </form>
+                       </div>
+                   </div>
+                   <hr>
+                   
+                   <h3 class="text-center mt-3">About website</h3>
+                   <div class="row">
+                       <div class="col-12">
+                           <textarea name="aboutWebsite" rows="5" class="form-control mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis hic adipisci, eos et totam placeat! Dolore sequi, laboriosam harum tempore, earum et vel explicabo beatae repellat suscipit perspiciatis veniam totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur odit, quos corporis expedita voluptatem. Placeat labore, repellat dicta maxime et nulla id a, quis rerum reiciendis sit harum provident obcaecati.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet doloribus molestias non. Soluta laborum voluptatem maiores porro aliquam, expedita iure praesentium, vero quisquam quae suscipit provident temporibus dicta officia itaque.</textarea>
+                       </div>
+                   </div>
+                   <hr>
+                   
+                   <div class="row">
+                       <div class="col-sm-4">
+                           <h4 class="text-center mt-3">Website Number</h4>
+                           <form action="">
+                               <div class="form-group">
+                                   <input type="number" class="form-control" value="0654657611" placeholder="number-1">
+                               </div>
+                               <div class="form-group">
+                                   <input type="number" class="form-control" value="84324684546" placeholder="number-2">
+                               </div>
+                               <div class="form-group">
+                                   <input type="submit" class="btn btn-custom" value="Submit">
+                               </div>
+                           </form>
+                       </div>
+                       <div class="col-sm-4">
+                           <h4 class="text-center mt-3">Website address</h4>
+                           <form action="">
+                               <div class="form-group">
+                                   <input type="text" class="form-control" value="256/55-C, Tejgaon, Farmgate" placeholder="Road number">
+                               </div>
+                               <div class="form-group">
+                                   <input type="text" class="form-control" value="Dhaka" placeholder="city">
+                               </div>
+                               <div class="form-group">
+                                   <input type="text" class="form-control" value="Bangladesh" placeholder="country">
+                               </div>
+                               <div class="form-group">
+                                   <input type="submit" class="btn btn-custom" value="Submit">
+                               </div>
+                           </form>
+                       </div>
+                       <div class="col-sm-4">
+                           <h4 class="text-center mt-3">Website Emails</h4>
+                           <form action="">
+                               <div class="form-group">
+                                   <input type="email" class="form-control" value="support@agriculture.com" placeholder="email-1">
+                               </div>
+                               <div class="form-group">
+                                   <input type="email" class="form-control" value="customer.support@gmail.com" placeholder="email-2">
+                               </div>
+                               <div class="form-group">
+                                   <input type="submit" class="btn btn-custom" value="Submit">
+                               </div>
+                           </form>
+                       </div>
+                   </div>
+                </div>
+                <!-- admin main screen ends -->
+            </div>
+        </div>
+    </div>
+    <!-- admin viewport ends -->
+    
+    
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<script src="../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+</body>
+</html>

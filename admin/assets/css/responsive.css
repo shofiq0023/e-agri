@@ -1,0 +1,9 @@
+@media (max-width: 768px){
+    .top-navbar{
+        position: static;
+    }
+    .sidebar{
+        position: static;
+        height: auto;
+    }
+}

@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	outline: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+ul,ol{
+	list-style: none;
+}
+a,a:hover{
+	text-decoration: none;
+}
+img{
+	vertical-align: center;
+}
+h1,h2,h3,h4,h5,h6,p,a,img,ul,ol,li{
+	padding: 0;
+	margin: 0;
+}
+.btn{
+    border: 2px solid #9CC623;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    transition: all .3s;
+}
+.btn:hover{
+    border: 2px solid #9CC623;
+    background: #9CC623;
+}
+.btn-custom{
+    color: #000;
+}
+.heading .divider{
+    height: 5px;
+    width: 100px;
+    background: #9CC623;
+    border-radius: 50px;
+}
+/*Common CSS*/
+
+/* header */
+.header{
+    height: 100vh;
+    background-image: url(../images/background/header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: darken;
+}
+.header h1{
+    font-weight: 700;
+}
+/* end header */
+
+/* sell */
+.sell{
+    background: #F8F5F0;
+}
+.sell-items{
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 8px 15px rgba(0,0,0,.3);
+    transition: all .3s;
+}
+.sell-items:hover{
+    transform: translateY(-2px);
+    box-shadow: 5px 8px 25px rgba(0,0,0,.3);
+}
+.sell-items .sell-heading{
+    transition: all .3s;
+}
+.sell-items:hover .sell-heading{
+    color: #9CC623;
+}
+.sell-items .sell-image img{
+    width: 80%;
+}
+.sell-items .sell-disc p{
+    font-size: 13px;
+}
+/* sell ends */
+
+/* about */
+.about .about-items{
+    transition: all .3s;
+}
+.about .about-items:hover{
+    transform: translateY(-2px);
+}
+.about-items .about-heading{
+    transition: all .3s;
+}
+.about-items:hover .about-heading{
+    color: #9CC623;
+}
+.about-items .about-text{
+    font-size: 14px;
+    font-weight: 500;
+}
+/* about ends*/
+
+/* team */
+.team{
+    background: #F8F5F0;
+}
+.team .team-heading{
+    transition: all .3s;
+}
+.team .team-item:hover .team-heading{
+    color: #9CC623;
+}
+.team .team-image img{
+    box-shadow: 3px 4px 15px rgba(0,0,0,.3);
+    transition: all .3s;
+}
+.team .team-item:hover .team-image img{
+    transform: translateY(-2px);
+    box-shadow: 3px 4px 25px rgba(0,0,0,.3);
+}
+.team .team-text p{
+    font-size: 14px;
+}
+/* team ends */
+
+/* footer */
+footer{
+    background: url(../images/background/footer-bg.jpg);
+    background-size: cover;
+}
+footer .heading .divider{
+    height: 2px;
+    width: 70px;
+}
+footer .footer-link{
+    color: #fff;
+    transition: all .3s;
+}
+footer .footer-link:hover{
+    color: #9CC623;
+}
+footer .footer-social{
+    font-size: 42px;
+}
+/* footer ends */
+
+/* copy section */
+.copy{
+    background: #414141;
+}
+/* copy section ends */
+
+
+/*======= shop page =======*/
+.breadcrumb-section{
+    height: 300px;
+    background-image: url(../images/background/breadcrumb.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: rgba(0,0,0,.3);
+    background-blend-mode: darken;
+    color: #fff;
+}
+.breadcrumb-section h2{
+    font-size: 62px;
+}
+.breadcrumb-section h2 .text-mute{
+    color: #B3B3B3;
+}
+
+.product-item .product-image img{
+    box-shadow: 2px 2px 20px rgba(0,0,0,.1);
+    transition: all .3s;
+}
+.product-item .product-name{
+    font-size: 22px;
+}
+.product-item:hover .product-image img{
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 25px rgba(0,0,0,.1);
+}
+.product-item:hover .buy-button a{
+    background: #9CC623;
+}
+/*======= shop page ends =======*/
+
+/*======= contact =======*/
+.contact .contact-top .contact-icon{
+    font-size: 32px;
+    border: 2px solid #9CC623;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transition: all .3s;
+}
+.contact .contact-top:hover .contact-icon{
+    background: #9CC623;
+    border-color: #9CC623;
+}
+.contact .contact-form form{
+    box-shadow: 2px 2px 15px rgba(0,0,0,.2);
+    padding: 30px;
+    margin-top: 60px;
+}
+.contact .contact-form input{
+    width: 90%;
+}
+.contact .contact-form textarea{
+    height: 210px;
+}
+.contact .contact-form label{
+    font-weight: 600;
+}
+/*======= contact ends =======*/
+
+/*======= login =======*/
+.login-section .login{
+/*    border: 1px solid black;*/
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,.2);
+}
+.login-section .form-content{
+    width: 60%;
+}
+.login-section .login-side{
+    background-size: cover;
+    background-position: center 100%;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: darken;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    height: 520px;
+}
+.login-section .login-form{
+    height: 520px;
+}
+.login-section .signup-size{
+    height: 600px;
+}
+/*======= login ends =======*/
+
+/*======= order confirm =======*/
+.order-confirm{
+    height: 400px;
+}
+/*======= order confirm ends =======*/

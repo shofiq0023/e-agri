@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	outline: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+ul,ol{
+	list-style: none;
+}
+a,a:hover{
+	text-decoration: none;
+}
+img{
+	vertical-align: center;
+}
+h1,h2,h3,h4,h5,h6,p,a,img,ul,ol,li{
+	padding: 0;
+	margin: 0;
+}
+.btn-custom{
+    border: 2px solid #9CC623;
+    font-weight: 600;
+}
+.btn-custom:hover{
+    background: #9CC623;
+}
+.text-red{
+    color: #A80000 !important;
+}
+/*Common CSS*/
+
+form{
+    padding: 20px;
+}
+.admin-login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+
+/*======= side and top bar =======*/
+.sidebar{
+    height: 100vh;
+    box-shadow: 2px 2px 15px rgba(0,0,0,.2);
+}
+.navbar-brand{
+    border-bottom: 1px groove #eee;
+}
+.sidebar-link{
+    border-radius: 5px;
+    transition: all .3s;
+}
+.sidebar-link:hover{
+    background: #323232;
+}
+.navbar-item.link-active .nav-link-main{
+    background: #9CC623;
+}
+.top-navbar{
+    background: #4B4B4B;
+}
+/*======= side and top bar ends =======*/
+
+.card{
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    transition: all .3s;
+}
+.card:hover{
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 15px rgba(0,0,0,.2);
+}
+
+
+
